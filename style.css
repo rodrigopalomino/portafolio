@@ -1,0 +1,283 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(32, 32, 36);
+    color: white;
+}
+
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+/* menu */
+.menu {
+    /* background: wheat; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 50px;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.menu-title {
+    margin-left: 300px;
+    margin-top: 3px;
+}
+
+.menu ul {
+    list-style: none;
+    text-align: right;
+}
+
+.menu li {
+    display: inline-block;
+    padding-top: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 50px;
+}
+
+.navigation-menu {
+    margin-right: 300px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+} 
+
+/* presentacion */
+
+.presentacion {
+    color: white;
+    text-align: center;
+    height: 95vb;
+    padding-top: 15%;
+    font-family: 'Merienda', cursive;
+}
+
+.presentacion h1 {
+    font-size: 80px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background: linear-gradient(#1497BE, #1C2AEC);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    animation: text 5s linear infinite;
+}
+
+@keyframes text {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.presentacion p {
+    font-size: 25px;
+}
+
+.botones button{
+    font-family: 'Merienda', cursive;
+    border: none;
+    background: linear-gradient(to right, #cb232c, #ce1d61);
+    color: white;
+    font-size: 16px;
+    width: 180px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    animation: text 5s linear infinite;
+}
+
+
+/* quien soy */
+.quiensoy {
+    display: grid;
+    margin-bottom: 40px;
+    Font-family: Arial, Helvetica Neue, Helvetica, sans-se;
+    grid-template-columns: 3fr 4fr;
+    font-size: 20px;
+}
+
+.quiensoy-imagen {
+    text-align: right;
+    padding-right: 60px;
+}
+
+.quiensoy-informacion {
+    margin: 50px auto;
+    padding-right: 300px;
+}
+
+/* skills */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 300px;
+    padding-left: 300px;
+}
+
+.cuadrado {
+    /* background: blue; */
+    background: rgb(32, 32, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+}
+.cuadrado:hover .cuadrado-descripcion{
+    opacity: 0;
+}
+
+.cuadrado:hover .imagen-p{
+    opacity: 1;
+}
+
+
+.cuadrado img {
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.cuadrado-descripcion {
+    position: absolute;
+    transition: opacity 0.3s ease;
+
+}
+
+.cuadrado-descripcion h3 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.cuadrado-descripcion p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.imagen-p {
+    opacity: 0;
+}
+
+
+
+/* .proyectos-grupo:hover .imagenes {
+    opacity: 0;
+}
+
+.proyectos-grupo:hover .proyectos-descripcion {
+    opacity: 1;
+} */
+
+/* proyectos */
+
+.titulo-proyec {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    gap: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.proyectos-grupo {
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+}
+
+.proyectos-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+    height: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    transition:  0.3s ease;
+}
+
+.imagenes {
+    max-width: 100%;
+    max-height: 100%;
+    transition: 0.3s ease; 
+}
+
+.proyectos-descripcion {
+    position: absolute; 
+    bottom: 65px;
+    left: 10px; 
+    color: white;
+    font-size: 14px;
+    opacity: 0;
+
+}
+
+.proyectos-descripcion p{
+    font-size: 19px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/* .proyectos-grupo:hover .proyectos-imagen {
+    opacity: 0;
+} */
+
+.proyectos-grupo:hover .imagenes {
+    opacity: 0;
+}
+
+.proyectos-grupo:hover .proyectos-descripcion {
+    opacity: 1;
+}
+
+/* despedida */
+
+.despedida {
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 20px;
+}
+
+/* contacto */
+
+.contacto {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 40%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* border: 1px solid white; */
+    font-size: 20px;
+}
