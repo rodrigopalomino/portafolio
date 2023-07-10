@@ -69,7 +69,6 @@ body {
     height: 90vb;
     padding-top: 10%;
     font-family: 'Merienda', cursive;
-    /* border: 1px solid white; */
 }
 
 .presentacion h1 {
@@ -110,6 +109,11 @@ body {
     margin-left: 10px;
     border-radius: 5px;
     animation: text 5s linear infinite;
+    transition: 0.2s ease;
+}
+
+.botones button:hover{
+    box-shadow: 0px 0px 15px rgba(256, 256, 256, 0.3);
 }
 
 
