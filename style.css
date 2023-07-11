@@ -124,8 +124,6 @@ body {
     Font-family: Arial, Helvetica Neue, Helvetica, sans-se;
     grid-template-columns: 3fr 4fr;
     font-size: 20px;
-    /* border: 1px solid white; */
-    /* box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.4); */
 }
 
 .quiensoy-imagen {
@@ -176,6 +174,7 @@ body {
 .cuadrado {
     padding-left: 80px;
     background: rgb(32, 32, 36);
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -345,22 +344,41 @@ body {
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 1200px) {
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-.menu {
-    display: block;
-    background: #1C2AEC;
-    width: 100%;
-
-}
-
-.menu ul li{
+.menu ul li {
     display: none;
-
 }
+
+.yo-imagen {
+    padding-top: 0;
+}
+
+.quiensoy-informacion {
+    justify-content: center;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    gap: 5%;
+    padding-top: 70px;
+    padding-bottom: 90px;
+    padding-left: 15%;
+    padding-right: 15%;
+    justify-items: center;
+    align-items: center;
+    height: 155vh;
+}
+
+.titulo-skills {
+    grid-column: span 2;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
 
 }
