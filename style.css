@@ -344,67 +344,23 @@ body {
 }
 
 /* Estilos para pantallas pequeñas */
-@media (max-width: 768px) {
-    /* Ajusta el tamaño de los elementos, los márgenes, el espaciado, etc. */
-    .presentacion h1 {
-        font-size: 60px;
-    }
-
-    .botones button {
-        font-size: 14px;
-    }
-
-    /* Ajusta el diseño de la sección de Quién soy */
-    .quiensoy {
-        grid-template-columns: 1fr;
-    }
-
-    /* Ajusta el diseño de la sección de Skills */
-    .skills {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* Ajusta el diseño de la sección de Proyectos */
-    .proyectos {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* Ajusta el diseño de la sección de Contacto */
-    .contacto {
-        height: auto;
-        padding-top: 20px;
-    }
-
-    .contacto .iconos {
-        height: auto;
-        padding-top: 0;
-    }
+@media (max-width: 1200px) {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-/* Estilos para pantallas aún más pequeñas */
-@media (max-width: 576px) {
-    /* Ajusta el tamaño de los elementos, los márgenes, el espaciado, etc. */
-    .presentacion h1 {
-        font-size: 40px;
-    }
+.menu {
+    display: block;
+    background: #1C2AEC;
+    width: 100%;
 
-    .botones button {
-        font-size: 12px;
-    }
+}
 
-    /* Ajusta el diseño de la sección de Skills */
-    .skills {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+.menu ul li{
+    display: none;
 
-    /* Ajusta el diseño de la sección de Proyectos */
-    .proyectos {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+}
+
 }
