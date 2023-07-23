@@ -1,0 +1,361 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(32, 32, 36);
+    color: white;
+}
+
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+/* menu */
+.menu {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+    border: 1px solid white;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-title {
+    border: 1px solid white;
+    margin-left: 10%;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.navigation-menu {
+    border: 1px solid red;
+    width: 400px;
+    margin-right: 5%;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid blue;
+    height: 100%;
+}
+
+.menu li {
+    transition: 0.4s ease;
+    border: 1px solid orange;
+}
+
+.menu li:hover {
+    background: rgb(50, 50, 56);
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* presentacion */
+
+.presentacion {
+    color: white;
+    text-align: center;
+    height: 90vb;
+    padding-top: 10%;
+    font-family: 'Merienda', cursive;
+}
+
+.presentacion h1 {
+    font-size: 80px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background: linear-gradient(#1497BE, #1C2AEC);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    animation: text 5s linear infinite;
+}
+
+@keyframes text {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.presentacion p {
+    font-size: 25px;
+}
+
+.botones button{
+    font-family: 'Merienda', cursive;
+    border: none;
+    background: linear-gradient(to right, #cb232c, #ce1d61);
+    color: white;
+    font-size: 16px;
+    width: 180px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    animation: text 5s linear infinite;
+    transition: 0.2s ease;
+}
+
+.botones button:hover{
+    box-shadow: 0px 0px 15px rgba(256, 256, 256, 0.3);
+}
+
+
+/* quien soy */
+.quiensoy {
+    display: grid;
+    height: 60vh;
+    Font-family: Arial, Helvetica Neue, Helvetica, sans-se;
+    grid-template-columns: 3fr 4fr;
+    font-size: 20px;
+}
+
+.quiensoy-imagen {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    overflow: hidden;
+}
+
+.yo-imagen {
+    width: 400px;
+    padding-top: 160px;
+    transform: rotate(-270deg);
+    border-radius: 50px;
+}
+
+.quiensoy-informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 10% auto;
+    padding-right: 40%;
+}
+
+.quiensoy-informacion h2 {
+    margin-bottom: 30px;
+}
+
+
+/* skills */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5%;
+    padding-top: 70px;
+    padding-bottom: 90px;
+    padding-left: 14%;
+    padding-right: 14%;
+    justify-items: center;
+    align-items: center;
+    height: 80vh;
+}
+.titulo-skills {
+    grid-column: span 4;
+    margin-bottom: 40px;
+}
+
+.cuadrado {
+    padding-left: 80px;
+    background: rgb(32, 32, 36);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+.cuadrado:hover .cuadrado-descripcion{
+    opacity: 0;
+}
+
+.cuadrado:hover .imagen-p{
+    opacity: 1;
+}
+
+
+.cuadrado img {
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.cuadrado-descripcion {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+
+}
+
+.cuadrado-descripcion h3 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.cuadrado-descripcion p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.imagen-p {
+    opacity: 0;
+}
+
+
+/* proyectos */
+.proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+.titulo-proyecto {
+    grid-column: 3 span;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.proyectos-grupo {
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    /* padding-top: 20px; */
+}
+
+.proyectos-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+    height: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    transition:  0.3s ease;
+}
+
+.imagenes {
+    max-width: 100%;
+    max-height: 100%;
+    transition: 0.3s ease;
+}
+
+.proyectos-descripcion {
+    margin-top: 20px;
+    margin-left: 5%;
+    position: absolute; 
+    color: white;
+    font-size: 14px;
+    opacity: 0;
+}
+
+.proyectos-descripcion a{
+    color: white;
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+.proyectos-descripcion a:hover {
+    font-size: 30px;
+}
+
+.proyectos-descripcion p{
+    font-size: 19px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* .proyectos-grupo:hover .proyectos-imagen {
+    opacity: 0;
+} */
+
+.proyectos-grupo:hover .imagenes {
+    opacity: 0;
+}
+
+.proyectos-grupo:hover .proyectos-descripcion {
+    opacity: 1;
+}
+
+/* despedida */
+
+.despedida {
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 20px;
+}
+
+/* contacto */
+
+.contacto {
+    display: block;
+    text-align: center;
+    height: 25vh;
+    padding-top: 40px;
+    font-size: 20px;
+}
+.contacto p {
+    margin: 5px;
+}
+
+.contacto .iconos{
+    margin-top: 20px;
+    height: 10vh;
+    padding-top:10px ;
+}
+.contacto .iconos  a{
+    font-size: 40px;
+    margin: 10px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.contacto .iconos a:hover {
+    font-size: 60px;
+}
+
+@media (max-width: 768px) {
+    /* Agrega aquí los estilos que deseas aplicar para pantallas más pequeñas, como celulares */
+
+.menu-title {
+    border: 1px solid white;
+    display: block;
+    width: auto;
+}
+
+.navigation-menu {
+    display: none;
+}
+
+
+}
