@@ -19,64 +19,66 @@ body {
 /* menu */
 .menu {
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
-    border: 1px solid white;
-    height: 50px;
     display: flex;
     justify-content: space-between;
+    height: 55px;
 }
 
-.menu-title {
-    border: 1px solid white;
+.menu__nombre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 10%;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bold;
 }
 
-.navigation-menu {
-    border: 1px solid red;
-    width: 400px;
-    margin-right: 5%;
+.menu__navigation {
+    margin-right: 10%;
 }
 
-.menu ul {
-    list-style: none;
+.menu__navigation ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    border: 1px solid blue;
     height: 100%;
+    list-style: none;
 }
 
-.menu li {
-    transition: 0.4s ease;
-    border: 1px solid orange;
+.menu__navigation li {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.3s ease;
 }
 
-.menu li:hover {
+.menu__navigation li:hover {
     background: rgb(50, 50, 56);
 }
 
-
-.menu a {
+.menu__navigation a {
     text-decoration: none;
     color: white;
+    margin: 25px;
+    font-size: 18px;
 }
-
 
 /* presentacion */
-
 .presentacion {
-    color: white;
-    text-align: center;
-    height: 90vb;
-    padding-top: 10%;
-    font-family: 'Merienda', cursive;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "merienda", cursive;
 }
 
-.presentacion h1 {
-    font-size: 80px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+.presentacion__yo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background: linear-gradient(#1497BE, #1C2AEC);
     color: transparent;
     background-clip: text;
@@ -95,11 +97,22 @@ body {
     }
 }
 
-.presentacion p {
-    font-size: 25px;
+
+.presentacion__yo p {
+    margin: 10px;
 }
 
-.botones button{
+.presentacion__yo-titulo {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.presentacion__yo-p {
+    font-size: 24px;
+    color: white;
+}
+
+.presentacion__botones button{
     font-family: 'Merienda', cursive;
     border: none;
     background: linear-gradient(to right, #cb232c, #ce1d61);
@@ -114,119 +127,69 @@ body {
     transition: 0.2s ease;
 }
 
-.botones button:hover{
+.presentacion__botones button:hover{
     box-shadow: 0px 0px 15px rgba(256, 256, 256, 0.3);
 }
-
-
 /* quien soy */
 .quiensoy {
-    display: grid;
-    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
     Font-family: Arial, Helvetica Neue, Helvetica, sans-se;
-    grid-template-columns: 3fr 4fr;
+}
+
+.quiensoy__imagen img {
+    width: 400px;
+    transform: rotate(-270deg);
+    border-radius: 10px;
+}
+
+.quiensoy__informacion {
+    width: 400px;
+}
+
+.quiensoy__informacion-subtitulo {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.quiensoy__informacion-p {
     font-size: 20px;
 }
 
-.quiensoy-imagen {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    overflow: hidden;
-}
-
-.yo-imagen {
-    width: 400px;
-    padding-top: 160px;
-    transform: rotate(-270deg);
-    border-radius: 50px;
-}
-
-.quiensoy-informacion {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    margin: 10% auto;
-    padding-right: 40%;
-}
-
-.quiensoy-informacion h2 {
-    margin-bottom: 30px;
-}
 
 
 /* skills */
 .skills {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5%;
-    padding-top: 70px;
-    padding-bottom: 90px;
-    padding-left: 14%;
-    padding-right: 14%;
-    justify-items: center;
-    align-items: center;
-    height: 80vh;
-}
-.titulo-skills {
-    grid-column: span 4;
-    margin-bottom: 40px;
+    border: 1px solid white;
+
 }
 
-.cuadrado {
-    padding-left: 80px;
-    background: rgb(32, 32, 36);
-    position: relative;
+.skills__titulo {
+    border: 1px solid red;
+    text-align: center;
+}
+
+.skills__titulo p {
+    font-size: 30px;
+}
+
+.skills__conteiner {
+    border: 1px solid green;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+}
+
+.skills__conteiner-grupo {
+    border: 1px solid white;
     width: 250px;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
-    position: relative;
-}
-.cuadrado:hover .cuadrado-descripcion{
-    opacity: 0;
+    height: 190px;
 }
 
-.cuadrado:hover .imagen-p{
-    opacity: 1;
+.skills__conteiner-grupo img {
+    width: 100px;
+    display: none;
 }
-
-
-.cuadrado img {
-    height: 150px;
-    position: relative;
-    overflow: hidden;
-    transition: opacity 0.3s ease;
-}
-
-.cuadrado-descripcion {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    opacity: 1;
-    transition: opacity 0.3s ease;
-
-}
-
-.cuadrado-descripcion h3 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.cuadrado-descripcion p {
-    text-align: center;
-    font-size: 20px;
-}
-
-.imagen-p {
-    opacity: 0;
-}
-
 
 /* proyectos */
 .proyectos {
