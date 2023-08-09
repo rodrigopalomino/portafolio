@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!--merienda-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="img/favicon.ico" />
+    <title>mi portafoliio</title>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <header class="menu">
+      <div class="menu__nombre">{ Rodrigo }</div>
+      <nav class="menu__navigation">
+        <ul>
+          <li><a href="#quiensoy">Quien soy</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="presentacion">
+        <div class="presentacion__yo">
+          <p class="presentacion__yo-p">Hola, soy</p>
+          <p class="presentacion__yo-titulo">Rodrigo</p>
+          <p class="presentacion__yo-titulo">Palomino</p>
+          <p class="presentacion__yo-p">Estudiante de Desarrollo de Software</p>
+        </div>
+
+        <div class="presentacion__botones">
+          <a href="cv.pdf" download="CV"
+            ><button>
+              <i class="fa-solid fa-download"></i> Descargar CV
+            </button></a
+          >
+          <a href="#contacto"
+            ><button>
+              <i class="fa-regular fa-paper-plane"></i> Datos de Contacto
+            </button></a
+          >
+        </div>
+      </div>
+
+      <div class="quiensoy" id="quiensoy">
+        <div class="quiensoy__imagen">
+          <img src="img/mifoto.jpg" />
+        </div>
+
+        <div class="quiensoy__informacion">
+          <p class="quiensoy__informacion-p">Quién soy</p>
+          <p class="quiensoy__informacion-subtitulo">Sobre mí</p>
+          <p class="quiensoy__informacion-p">
+            Soy estudiante de Senati de la carrera de Desarrollo de Software,
+            actualmente cursando el 4to ciclo. Estoy en búsqueda de una empresa
+            para realizar mis prácticas. <br /><br />Me apasiona la programación
+            y me considero autodidacta, siempre en busca de aprender nuevas
+            tecnologías y mejorar mis habilidades. Además, tengo experiencia en
+            la realización de proyectos tanto personales como académicos.
+          </p>
+        </div>
+      </div>
+
+      <div class="skills" id="skills">
+        <div class="skills__titulo">
+          <p>Skills</p>
+        </div>
+
+        <div class="skills__conteiner">
+          <div class="skills__conteiner-grupo">
+            <img class="skills-img" src="img/html.png" />
+            <div class="skills__conteiner-grupo-descripcion">
+              <p class="skills-titulo">HTML</p>
+              <p class="skills-p">Intermedio</p>
+            </div>
+          </div>
+
+          <div class="skills__conteiner-grupo">
+            <img class="skills-img" src="img/css.png" />
+            <div class="skills__conteiner-grupo-descripcion">
+              <p class="skills-titulo">CSS</p>
+              <p class="skills-p">Intermedio</p>
+            </div>
+          </div>
+
+          <div class="skills__conteiner-grupo">
+            <img class="skills-img" src="img/Javascript.png" />
+            <div class="skills__conteiner-grupo-descripcion">
+              <p class="skills-titulo">JavaScript</p>
+              <p class="skills-p">Basico</p>
+            </div>
+          </div>
+
+          <div class="skills__conteiner-grupo">
+            <img class="skills-img" src="img/Javascript.png" />
+            <div class="skills__conteiner-grupo-descripcion">
+              <p class="skills-titulo">Angular</p>
+              <p class="skills-p">Intermido-Basico</p>
+            </div>
+          </div>
+        </div>
+        <div class="skills__conteiner">
+          <div class="skills__conteiner-grupo">
+            <img class="skills-img" src="img/nodejs.webp" />
+            <div class="skills__conteiner-grupo-descripcion">
+              <p class="skills-titulo">NodeJs</p>
+              <p class="skills-p">Intermedio-Basico</p>
+            </div>
+          </div>
+
+          <div class="skills__conteiner-grupo">
+            <img class="skills-img" src="img/java.png" />
+            <div class="skills__conteiner-grupo-descripcion">
+              <p class="skills-titulo">Java</p>
+              <p class="skills-p">Intermedio</p>
+            </div>
+          </div>
+
+          <div class="skills__conteiner-grupo">
+            <img class="skills-img" src="img/mysql.jpg" />
+            <div class="skills__conteiner-grupo-descripcion">
+              <p class="skills-titulo">MySql</p>
+              <p class="skills-p">Intermedio</p>
+            </div>
+          </div>
+
+          <div class="skills__conteiner-grupo">
+            <img class="skills-img" src="img/sql.png" />
+            <div class="skills__conteiner-grupo-descripcion">
+              <p class="skills-titulo">SQL</p>
+              <p class="skills-p">Intermedio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proyecto" id="proyectos">
+        <div class="proyecto__titulo">
+          <p>Proyectos</p>
+        </div>
+
+        <div class="proyecto__conteiner">
+          <div class="proyecto__conteiner-grupo">
+            <img src="img/clinica.PNG" class="proyecto__conteiner-grupo-img" />
+            <div class="proyecto__conteiner-grupo-descripcion">
+              <p>
+                Basada en una clínica, ha sido desarrollado utilizando
+                tecnologías como Node.js, HTML, CSS y JavaScript.
+              </p>
+              <a href="https://proyecto-1-production.up.railway.app/"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+              <a href="https://github.com/rodrigopalomino/proyecto-1"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="proyecto__conteiner-grupo">
+            <img src="img/clinica.PNG" class="proyecto__conteiner-grupo-img" />
+            <div class="proyecto__conteiner-grupo-descripcion">
+              <p>
+                Basada en una clínica, ha sido desarrollado utilizando
+                tecnologías como Node.js, HTML, CSS y JavaScript.
+              </p>
+              <a href="https://proyecto-1-production.up.railway.app/"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+              <a href="https://github.com/rodrigopalomino/proyecto-1"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="proyecto__conteiner-grupo">
+            <img src="img/clinica.PNG" class="proyecto__conteiner-grupo-img" />
+            <div class="proyecto__conteiner-grupo-descripcion">
+              <p>
+                Basada en una clínica, ha sido desarrollado utilizando
+                tecnologías como Node.js, HTML, CSS y JavaScript.
+              </p>
+              <a href="https://proyecto-1-production.up.railway.app/"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+              <a href="https://github.com/rodrigopalomino/proyecto-1"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="proyecto__conteiner">
+          <div class="proyecto__conteiner-grupo">
+            <img src="img/clinica.PNG" class="proyecto__conteiner-grupo-img" />
+            <div class="proyecto__conteiner-grupo-descripcion">
+              <p>
+                Basada en una clínica, ha sido desarrollado utilizando
+                tecnologías como Node.js, HTML, CSS y JavaScript.
+              </p>
+              <a href="https://proyecto-1-production.up.railway.app/"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+              <a href="https://github.com/rodrigopalomino/proyecto-1"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="proyecto__conteiner-grupo">
+            <img src="img/clinica.PNG" class="proyecto__conteiner-grupo-img" />
+            <div class="proyecto__conteiner-grupo-descripcion">
+              <p>
+                Basada en una clínica, ha sido desarrollado utilizando
+                tecnologías como Node.js, HTML, CSS y JavaScript.
+              </p>
+              <a href="https://proyecto-1-production.up.railway.app/"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+              <a href="https://github.com/rodrigopalomino/proyecto-1"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="proyecto__conteiner-grupo">
+            <img src="img/clinica.PNG" class="proyecto__conteiner-grupo-img" />
+            <div class="proyecto__conteiner-grupo-descripcion">
+              <p>
+                Basada en una clínica, ha sido desarrollado utilizando
+                tecnologías como Node.js, HTML, CSS y JavaScript.
+              </p>
+              <a href="https://proyecto-1-production.up.railway.app/"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+              <a href="https://github.com/rodrigopalomino/proyecto-1"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="despedida" id="contacto">
+        <h1>Gracias por visitar mi sitio web</h1>
+        <h2>Formas de contactarme <i class="fa-solid fa-arrow-down"></i></h2>
+      </div>
+
+      <div class="contacto" id="contacto">
+        <p>Teléfono: 904 634 045</p>
+        <p>Email: rodrigopalominocastro0@gmail.com</p>
+        <p>Vsita mi perfil en <i class="fa-solid fa-arrow-down"></i></p>
+        <div class="iconos">
+          <a href="https://github.com/rodrigopalomino"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/rodrigo-palomino-castro-007904280"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+      <div class="copyrigh">
+        <p>Hecho en el 2023 por Rodrigo Palomino.</p>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
