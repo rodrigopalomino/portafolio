@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!--merienda-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,10 +23,21 @@
     <link rel="icon" href="img/favicon.ico" />
     <title>mi portafoliio</title>
   </head>
+
   <body>
     <div id="particles-js"></div>
-    <header class="menu">
-      <div class="menu__nombre">{ Rodrigo }</div>
+    <header
+      class="menu"
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+    >
+      <div class="menu__nombre"><span class="typed"></span></div>
+
+      <div class="menu__nombre" id="cadenas-texto">
+        <p>{ Rodrigo }</p>
+      </div>
+
       <nav class="menu__navigation">
         <ul>
           <li><a href="#quiensoy">Quien soy</a></li>
@@ -37,7 +49,12 @@
     </header>
 
     <main>
-      <div class="presentacion">
+      <div
+        class="presentacion"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+      >
         <div class="presentacion__yo">
           <p class="presentacion__yo-p">Hola, soy</p>
           <p class="presentacion__yo-titulo">Rodrigo</p>
@@ -59,7 +76,12 @@
         </div>
       </div>
 
-      <div class="quiensoy" id="quiensoy">
+      <div
+        class="quiensoy"
+        id="quiensoy"
+        data-aos="fade-right"
+        data-aos-duration="3000"
+      >
         <div class="quiensoy__imagen">
           <img src="img/mifoto.jpg" />
         </div>
@@ -78,24 +100,21 @@
         </div>
       </div>
 
-      <div class="skills" id="skills">
+      <div
+        class="skills"
+        id="skills"
+        data-aos="fade-right"
+        data-aos-duration="3000"
+      >
         <div class="skills__titulo">
           <p>Skills</p>
         </div>
 
         <div class="skills__conteiner">
           <div class="skills__conteiner-grupo">
-            <img class="skills-img" src="img/html.png" />
-            <div class="skills__conteiner-grupo-descripcion">
-              <p class="skills-titulo">HTML</p>
-              <p class="skills-p">Intermedio</p>
-            </div>
-          </div>
-
-          <div class="skills__conteiner-grupo">
             <img class="skills-img" src="img/css.png" />
             <div class="skills__conteiner-grupo-descripcion">
-              <p class="skills-titulo">CSS</p>
+              <p class="skills-titulo">HTML - CSS</p>
               <p class="skills-p">Intermedio</p>
             </div>
           </div>
@@ -109,10 +128,18 @@
           </div>
 
           <div class="skills__conteiner-grupo">
-            <img class="skills-img" src="img/Javascript.png" />
+            <img class="skills-img" src="img/angular.png" />
             <div class="skills__conteiner-grupo-descripcion">
               <p class="skills-titulo">Angular</p>
               <p class="skills-p">Intermido-Basico</p>
+            </div>
+          </div>
+
+          <div class="skills__conteiner-grupo">
+            <img class="skills-img" src="img/python.png" />
+            <div class="skills__conteiner-grupo-descripcion">
+              <p class="skills-titulo">Python</p>
+              <p class="skills-p">Intermedio-Basico</p>
             </div>
           </div>
         </div>
@@ -129,29 +156,34 @@
             <img class="skills-img" src="img/java.png" />
             <div class="skills__conteiner-grupo-descripcion">
               <p class="skills-titulo">Java</p>
-              <p class="skills-p">Intermedio</p>
+              <p class="skills-p">Intermedio-Basico</p>
             </div>
           </div>
 
           <div class="skills__conteiner-grupo">
             <img class="skills-img" src="img/mysql.jpg" />
             <div class="skills__conteiner-grupo-descripcion">
-              <p class="skills-titulo">MySql</p>
+              <p class="skills-titulo">MySql-SQL</p>
               <p class="skills-p">Intermedio</p>
             </div>
           </div>
 
           <div class="skills__conteiner-grupo">
-            <img class="skills-img" src="img/sql.png" />
+            <img class="skills-img" src="img/git.png" />
             <div class="skills__conteiner-grupo-descripcion">
-              <p class="skills-titulo">SQL</p>
+              <p class="skills-titulo">Github-git</p>
               <p class="skills-p">Intermedio</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="proyecto" id="proyectos">
+      <div
+        class="proyecto"
+        id="proyectos"
+        data-aos="fade-right"
+        data-aos-duration="3000"
+      >
         <div class="proyecto__titulo">
           <p>Proyectos</p>
         </div>
@@ -256,12 +288,22 @@
         </div>
       </div>
 
-      <div class="despedida" id="contacto">
+      <div
+        class="despedida"
+        id="contacto"
+        data-aos="fade-right"
+        data-aos-duration="3000"
+      >
         <h1>Gracias por visitar mi sitio web</h1>
         <h2>Formas de contactarme <i class="fa-solid fa-arrow-down"></i></h2>
       </div>
 
-      <div class="contacto" id="contacto">
+      <div
+        class="contacto"
+        id="contacto"
+        data-aos="fade-right"
+        data-aos-duration="3000"
+      >
         <p>Teléfono: 904 634 045</p>
         <p>Email: rodrigopalominocastro0@gmail.com</p>
         <p>Vsita mi perfil en <i class="fa-solid fa-arrow-down"></i></p>
@@ -275,11 +317,35 @@
           ></a>
         </div>
       </div>
+
       <div class="copyrigh">
         <p>Hecho en el 2023 por Rodrigo Palomino.</p>
       </div>
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="app.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      const typed = new Typed(".typed", {
+        stringsElement: "#cadenas-texto",
+        typeSpeed: 150,
+        startDelay: 300,
+        backSpeed: 150,
+        smartBackspace: true,
+        shuffle: false,
+        backDelay: 1500,
+        loop: true,
+        loopCount: false,
+        showCursor: true,
+        cursorChar: "|",
+        contentType: "html",
+      });
+    </script>
   </body>
 </html>
