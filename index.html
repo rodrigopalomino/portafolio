@@ -176,6 +176,46 @@
             </div>
           </div>
         </div>
+
+        <div class="carrusel">
+          <div class="grande">
+            <div class="grande-img">
+              <img class="skills-img" src="img/git.png" />
+            </div>
+            <div class="grande-img">
+              <img class="skills-img" src="img/git.png" />
+            </div>
+            <div class="grande-img">
+              <img class="skills-img" src="img/git.png" />
+            </div>
+            <div class="grande-img">
+              <img class="skills-img" src="img/git.png" />
+            </div>
+            <div class="grande-img">
+              <img class="skills-img" src="img/git.png" />
+            </div>
+            <div class="grande-img">
+              <img class="skills-img" src="img/git.png" />
+            </div>
+            <div class="grande-img">
+              <img class="skills-img" src="img/git.png" />
+            </div>
+            <div class="grande-img">
+              <img class="skills-img" src="img/git.png" />
+            </div>
+          </div>
+
+          <div class="puntos">
+            <ul class="punto"></ul>
+            <ul class="punto"></ul>
+            <ul class="punto"></ul>
+            <ul class="punto"></ul>
+            <ul class="punto"></ul>
+            <ul class="punto"></ul>
+            <ul class="punto"></ul>
+            <ul class="punto"></ul>
+          </div>
+        </div>
       </div>
 
       <div
@@ -345,6 +385,26 @@
         showCursor: true,
         cursorChar: "|",
         contentType: "html",
+      });
+    </script>
+    <script>
+      const grande = document.querySelector(".grande");
+      const punto = document.querySelectorAll(".punto");
+
+      punto.forEach((cadaPunto, i) => {
+        punto[i].addEventListener("click", () => {
+          let posicion = i;
+
+          let operacion = posicion * -12.5;
+
+          grande.style.transform = `translateX(${operacion}%)`;
+
+          punto.forEach((cadaPunto, i) => {
+            punto[i].classList.remove("activo");
+          });
+
+          punto[i].classList.add("activo");
+        });
       });
     </script>
   </body>
