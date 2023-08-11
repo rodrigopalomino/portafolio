@@ -177,8 +177,8 @@
           </div>
         </div>
 
-        <div class="carrusel">
-          <div class="grande">
+        <div class="carrusel" id="carrusel-quiensoy">
+          <div class="grande" id="grande-quiensoy">
             <div class="grande-img">
               <img class="skills-img" src="img/git.png" />
             </div>
@@ -205,8 +205,8 @@
             </div>
           </div>
 
-          <div class="puntos">
-            <ul class="punto"></ul>
+          <div class="puntos" id="puntos-quiensoy">
+            <ul class="punto activo"></ul>
             <ul class="punto"></ul>
             <ul class="punto"></ul>
             <ul class="punto"></ul>
@@ -326,6 +326,117 @@
             </div>
           </div>
         </div>
+
+        <div class="carrusel" id="carrusel-proyectos">
+          <div class="grande" id="grande-proyectos">
+            <div class="grande-img" id="proyectos-grande-img">
+              <img class="proyecto-img" src="img/clinica.PNG" />
+
+              <div class="grande-descripcion" id="grande-descripcion">
+                <p>
+                  Basada en una clínica, ha sido desarrollado utilizando
+                  tecnologías como Node.js, HTML, CSS y JavaScript.
+                </p>
+                <a href="https://proyecto-1-production.up.railway.app/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+                <a href="https://github.com/rodrigopalomino/proyecto-1"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="grande-img" id="proyectos-grande-img">
+              <img class="proyecto-img" src="img/clinica.PNG" />
+
+              <div class="grande-descripcion" id="grande-descripcion">
+                <p>
+                  Basada en una clínica, ha sido desarrollado utilizando
+                  tecnologías como Node.js, HTML, CSS y JavaScript.
+                </p>
+                <a href="https://proyecto-1-production.up.railway.app/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+                <a href="https://github.com/rodrigopalomino/proyecto-1"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="grande-img" id="proyectos-grande-img">
+              <img class="proyecto-img" src="img/clinica.PNG" />
+
+              <div class="grande-descripcion" id="grande-descripcion">
+                <p>
+                  Basada en una clínica, ha sido desarrollado utilizando
+                  tecnologías como Node.js, HTML, CSS y JavaScript.
+                </p>
+                <a href="https://proyecto-1-production.up.railway.app/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+                <a href="https://github.com/rodrigopalomino/proyecto-1"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="grande-img" id="proyectos-grande-img">
+              <img class="proyecto-img" src="img/clinica.PNG" />
+
+              <div class="grande-descripcion" id="grande-descripcion">
+                <p>
+                  Basada en una clínica, ha sido desarrollado utilizando
+                  tecnologías como Node.js, HTML, CSS y JavaScript.
+                </p>
+                <a href="https://proyecto-1-production.up.railway.app/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+                <a href="https://github.com/rodrigopalomino/proyecto-1"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="grande-img" id="proyectos-grande-img">
+              <img class="proyecto-img" src="img/clinica.PNG" />
+
+              <div class="grande-descripcion" id="grande-descripcion">
+                <p>
+                  Basada en una clínica, ha sido desarrollado utilizando
+                  tecnologías como Node.js, HTML, CSS y JavaScript.
+                </p>
+                <a href="https://proyecto-1-production.up.railway.app/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+                <a href="https://github.com/rodrigopalomino/proyecto-1"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="grande-img" id="proyectos-grande-img">
+              <img class="proyecto-img" src="img/clinica.PNG" />
+
+              <div class="grande-descripcion" id="grande-descripcion">
+                <p>
+                  Basada en una clínica, ha sido desarrollado utilizando
+                  tecnologías como Node.js, HTML, CSS y JavaScript.
+                </p>
+                <a href="https://proyecto-1-production.up.railway.app/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+                <a href="https://github.com/rodrigopalomino/proyecto-1"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="puntos" id="puntos-proyectos">
+            <ul class="punto activo"></ul>
+            <ul class="punto"></ul>
+            <ul class="punto"></ul>
+            <ul class="punto"></ul>
+            <ul class="punto"></ul>
+            <ul class="punto"></ul>
+          </div>
+        </div>
       </div>
 
       <div
@@ -388,8 +499,8 @@
       });
     </script>
     <script>
-      const grande = document.querySelector(".grande");
-      const punto = document.querySelectorAll(".punto");
+      const grande = document.getElementById("grande-quiensoy");
+      const punto = document.querySelectorAll("#puntos-quiensoy .punto");
 
       punto.forEach((cadaPunto, i) => {
         punto[i].addEventListener("click", () => {
@@ -404,6 +515,25 @@
           });
 
           punto[i].classList.add("activo");
+        });
+      });
+
+      const grande1 = document.getElementById("grande-proyectos");
+      const punto1 = document.querySelectorAll("#puntos-proyectos .punto");
+
+      punto1.forEach((cadaPunto, i) => {
+        punto1[i].addEventListener("click", () => {
+          let posicion = i;
+
+          let operacion = posicion * -16.67;
+
+          grande1.style.transform = `translateX(${operacion}%)`;
+
+          punto1.forEach((cadaPunto, i) => {
+            punto1[i].classList.remove("activo");
+          });
+
+          punto1[i].classList.add("activo");
         });
       });
     </script>
