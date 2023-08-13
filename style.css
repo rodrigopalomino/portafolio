@@ -7,7 +7,9 @@
 body {
   background: rgb(32, 32, 36);
   color: white;
+  /* border: 1px solid white; */
   overflow-x: hidden;
+  /* padding-left: 10px; */
 }
 
 #particles-js {
@@ -533,6 +535,10 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .proyecto {
+    margin-top: 100px;
   }
 
   #carrusel-quiensoy {

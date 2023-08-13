@@ -506,9 +506,12 @@
     <script>
       const grande = document.getElementById("grande-quiensoy");
       const punto = document.querySelectorAll("#puntos-quiensoy .punto");
+      console.log(grande);
+      console.log(punto);
 
       punto.forEach((cadaPunto, i) => {
         punto[i].addEventListener("click", () => {
+          console.log("aca");
           let posicion = i;
 
           let operacion = posicion * -12.5;
